@@ -12,15 +12,20 @@ sudo apt --yes --force-yes install git
 sudo apt --yes --force-yes install tree
 sudo apt --yes --force-yes install thunar
 sudo apt --yes --force-yes install okular
+sudo apt --yes --force-yes install scrot
 sudo apt --yes --force-yes install gcal
 sudo apt --yes --force-yes install python3-pip
 
+sudo add-apt-repository ppa:snwh/pulp
+sudo apt-get update
+sudo apt-get install paper-icon-theme
+
 # create wallpaper
 
-convert -size 1920x1080 xc:#333333 ~/Pictures/wallpaper.png
+convert -size 1920x1080 xc:#2e3436 ~/Pictures/grey.png
 
 # set it as the wallpaper with feh
-echo -e "feh --bg-scale ~/Pictures/wallpaper.png" >> ~/.profile
+echo -e "feh --bg-scale ~/Pictures/grey.png" >> ~/.profile
 
 # change keys to how I like them
 echo -e "xmodmap -e 'keycode  49 = grave asciitilde grave asciitilde' " >> ~/.profile
@@ -35,13 +40,19 @@ echo -e "alias df='df -h' " >> ~/.profile
 echo -e "alias tre='tree -h | less' " >> ~/.profile
 echo -e "alias gcal='gcal -s 1' " >> ~/.profile
 
+# select i3
+cp .dmrc ~/.dmrc
+
 # config i3
-# copy a file from a gist to ~/.config/i3/config
+cp i3config ~/.config/i3/config
 
 # config lightdm-gtk-greeter
 sudo cp lightdm.conf /etc/lightdm/lightdm.conf
+sudo cp lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
 
 # config lxappearance
 cp gtk3.0.conf ~/.config/gtk-3.0/settings.ini
 cp gtk2.0.conf ~/.gtkrc-2.0
 
+# turn off the menubar in the terminal
+sudo cp x-terminal-emulator /usr/bin/x-terminal-emulator
