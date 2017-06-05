@@ -8,7 +8,6 @@ sudo apt --yes --force-yes install lightdm-gtk-greeter
 sudo apt --yes --force-yes install lightdm-gtk-greeter-settings
 sudo apt --yes --force-yes install lxappearance
 sudo apt --yes --force-yes install feh
-sudo apt --yes --force-yes install git
 sudo apt --yes --force-yes install tree
 sudo apt --yes --force-yes install thunar
 sudo apt --yes --force-yes install okular
@@ -24,27 +23,18 @@ sudo apt-get install paper-icon-theme
 
 convert -size 1920x1080 xc:#2e3436 ~/Pictures/grey.png
 
-# set it as the wallpaper with feh
-echo -e "feh --bg-scale ~/Pictures/grey.png" >> ~/.profile
+# set up profile
+cp profile ~/.profile
 
-# change keys to how I like them
-echo -e "xmodmap -e 'keycode  49 = grave asciitilde grave asciitilde' " >> ~/.profile
-echo -e "xmodmap -e 'keycode  51 = underscore sterling underscore sterling' " >> ~/.profile
-echo -e "xmodmap -e 'keycode  94 = backslash bar backslash bar' " >> ~/.profile
-
-# common commands i use
-echo -e "alias lr='ls -lhrt' " >> ~/.profile
-echo -e "alias lrt='ls -lhrt | tail' " >> ~/.profile
-echo -e "alias duh='du -hc -d 1' " >> ~/.profile
-echo -e "alias df='df -h' " >> ~/.profile
-echo -e "alias tre='tree -h | less' " >> ~/.profile
-echo -e "alias gcal='gcal -s 1' " >> ~/.profile
+# bashrc
+cp bashrc ~/.bashrc
 
 # select i3
 cp .dmrc ~/.dmrc
 
 # config i3
 cp i3config ~/.config/i3/config
+cp i3status.conf /etc/i3status.conf
 
 # config lightdm-gtk-greeter
 sudo cp lightdm.conf /etc/lightdm/lightdm.conf
