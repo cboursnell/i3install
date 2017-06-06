@@ -23,13 +23,15 @@ fi
 
 feh --bg-scale ~/Pictures/grey.png
 
-xmodmap -e 'keycode  49 = grave asciitilde grave asciitilde' 
-xmodmap -e 'keycode  51 = underscore sterling underscore sterling' 
+xmodmap -e 'keycode  49 = grave asciitilde grave asciitilde'
+xmodmap -e 'keycode  51 = underscore sterling underscore sterling'
 xmodmap -e 'keycode  94 = backslash bar backslash bar'
 
-alias lr='ls -lhrt' 
-alias lrt='ls -lhrt | tail' 
-alias duh='du -hc -d 1' 
-alias df='df -h' 
-alias tre='tree -h | less' 
-alias gcal='gcal -s 1' 
+alias lr='ls -lhrt'
+alias lrt='ls -lhrt | tail'
+alias lss='ls -lhrS'
+alias duh='du -hc -d 1'
+alias duhs='du -hc -d 1 | sort -k1,1h'
+alias df='df -h'
+alias tre='tree -h | less'
+alias gcal='gcal -s 1'

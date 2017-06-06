@@ -1,6 +1,11 @@
 #!/bin/bash
 
+sudo apt --yes install python3-pip
+
 # install extra programs once we're in i3
+
+# apps
+mkdir -p ~/apps
 
 # install sublime text 3
 wget https://download.sublimetext.com/sublime_text_3_build_3126_x64.tar.bz2 -O ~/apps/sublimetext3.tar.bz2
@@ -10,7 +15,8 @@ tar xjf sublimetext3.tar.bz2
 # add path to .profile
 echo "export PATH=\"$PATH:$HOME/apps/sublime_text_3\"" >> .profile
 
-# install rstudio
+# install r + rstudio
+sudo apt install r-base
 wget https://download1.rstudio.org/rstudio-1.0.143-amd64.deb
 wget http://ftp.ca.debian.org/debian/pool/main/g/gstreamer0.10/libgstreamer0.10-0_0.10.36-1.5_amd64.deb
 wget http://ftp.ca.debian.org/debian/pool/main/g/gst-plugins-base0.10/libgstreamer-plugins-base0.10-0_0.10.36-2_amd64.deb
@@ -36,3 +42,12 @@ cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
 echo -e ".dropbox-dist/dropboxd\n" >> .profile
 
 sudo apt --yes install thunar-dropbox-plugin
+
+# google player
+wget https://github.com/MarshallOfSound/Google-Play-Music-Desktop-Player-UNOFFICIAL-/releases/download/v4.3.0/google-play-music-desktop-player_4.3.0_amd64.deb
+sudo apt install libappindicator1
+sudo apt install libindicator7
+sudo dpkg -i google-play-music-desktop-player_4.3.0_amd64.deb
+sudo apt-get -f install
+sudo apt install libgconf-2-4
+
