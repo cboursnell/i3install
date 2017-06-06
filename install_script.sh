@@ -76,8 +76,8 @@ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB8
 echo -e "source ~/.rvm/scripts/rvm\n" >> .profile
 
 source ~/.rvm/scripts/rvm
-
-rvm install ruby-2.3.1
+rvm autolibs disable
+rvm install ruby-2.4.1
 
 # install dropbox
 cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
