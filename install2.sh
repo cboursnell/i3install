@@ -12,8 +12,8 @@ sudo apt install chromium-browser
 
 # install sublime text 3
 wget https://download.sublimetext.com/sublime_text_3_build_3126_x64.tar.bz2 -O ~/apps/sublimetext3.tar.bz2
-cd apps && tar xjf sublimetext3.tar.bz2
-
+cd ~/apps && tar xjf sublimetext3.tar.bz2
+rm sublimetext3.tar.bz2
 
 # add path to .profile
 echo "export PATH=\"$PATH:$HOME/apps/sublime_text_3\"" >> .profile
