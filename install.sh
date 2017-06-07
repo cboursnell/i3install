@@ -40,6 +40,7 @@ sudo cp i3status.conf /etc/i3status.conf
 # config lightdm-gtk-greeter
 sudo cp lightdm.conf /etc/lightdm/lightdm.conf
 sudo cp lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
+sudo cp state /var/lib/lightdm/.cache/lightdm-gtk-greeter/state
 
 # config lxappearance
 cp gtk3.0.conf ~/.config/gtk-3.0/settings.ini

@@ -1,0 +1,12 @@
+{
+	"always_show_minimap_viewport": true,
+	"color_scheme": "Packages/User/SublimeLinter/Sunburst (SL).tmTheme",
+	"dictionary": "Packages/Language - English/en_GB.dic",
+	"draw_minimap_border": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"theme": "SoDaReloaded Dark.sublime-theme",
+	"trim_trailing_white_space_on_save": true
+}
