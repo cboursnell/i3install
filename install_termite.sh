@@ -23,3 +23,5 @@ sudo ldconfig
 sudo mkdir -p /lib/terminfo/x
 sudo ln -s /usr/local/share/terminfo/x/xterm-termite /lib/terminfo/x/xterm-termite
 
+mkdir -p ~/.config/termite
+cp termite.conf ~/.config/termite/config
