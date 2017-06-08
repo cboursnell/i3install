@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # install things from apt
-sudo apt --yes install i3
+#sudo apt --yes install i3
+source install_i3-gaps.sh
 sudo apt --yes install emacs24-nox
 sudo apt --yes install lightdm-gtk-greeter
 sudo apt --yes install lightdm-gtk-greeter-settings
@@ -11,6 +12,7 @@ sudo apt --yes install tree
 sudo apt --yes install thunar
 sudo apt --yes install okular
 sudo apt --yes install scrot
+sudo apt --yes install compton
 sudo apt --yes install gcal
 
 # icon pack
@@ -35,7 +37,10 @@ cp .dmrc ~/.dmrc
 # config i3
 mkdir -p ~/.config/i3
 cp i3config ~/.config/i3/config
-sudo cp i3status.conf /etc/i3status.conf
+
+# config polybar
+mkdir -p ~/.config/polybar
+cp polybar.conf ~/.config/polybar/config
 
 # config lightdm-gtk-greeter
 sudo cp lightdm.conf /etc/lightdm/lightdm.conf
@@ -46,6 +51,9 @@ sudo cp state /var/lib/lightdm/.cache/lightdm-gtk-greeter/state
 # config lxappearance
 cp gtk3.0.conf ~/.config/gtk-3.0/settings.ini
 cp gtk2.0.conf ~/.gtkrc-2.0
+
+# config emacs
+cp emacs.conf ~/.emacs
 
 # turn off the menubar in the terminal
 sudo cp x-terminal-emulator /usr/bin/x-terminal-emulator

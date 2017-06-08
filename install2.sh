@@ -57,3 +57,8 @@ sudo apt install libgconf-2-4
 # email
 sudo apt install claws-mail
 
+# font manager
+sudo add-apt-repository ppa:font-manager/staging
+sudo apt-get update
+sudo apt-get install font-manager
+
