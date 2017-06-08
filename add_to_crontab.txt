@@ -1,0 +1,1 @@
+*/1 * * * * /home/chris/.rvm/rubies/ruby-2.3.1/bin/ruby colour_change.rb
