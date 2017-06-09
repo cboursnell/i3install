@@ -3,12 +3,12 @@
 time = Time.now
 hour = time.hour
 min = time.min
-hour = 18
+
 x = Math::PI*(hour + min/60.0)/12.0
 
-red = 40 + 10*Math.cos(x)
+red = 40 + 12*Math.cos(x)
 green = 40
-blue = 40 - 10*Math.cos(x)
+blue = 40 - 12*Math.cos(x)
 
 hex = "#{red.to_i.to_s(16)}"
 hex << "#{green.to_i.to_s(16)}"
