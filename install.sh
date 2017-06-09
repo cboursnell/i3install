@@ -5,15 +5,16 @@
 source install_i3-gaps.sh
 sudo apt --yes install emacs24-nox
 sudo apt --yes install lightdm-gtk-greeter
-sudo apt --yes install lightdm-gtk-greeter-settings
-sudo apt --yes install lxappearance
-sudo apt --yes install feh
-sudo apt --yes install tree
-sudo apt --yes install thunar
-sudo apt --yes install okular
-sudo apt --yes install scrot
-sudo apt --yes install compton
-sudo apt --yes install gcal
+sudo apt --yes install lightdm-gtk-greeter-settings 
+sudo apt --yes install lxappearance   # gtk themes
+sudo apt --yes install feh      # wallpapers
+sudo apt --yes install tree     # tree!
+sudo apt --yes install thunar   # graphical file manager
+sudo apt --yes install okular   # pdf viewer
+sudo apt --yes install scrot    # screen shots
+sudo apt --yes install compton  # compositor, allows transparency
+sudo apt --yes install dfc      # like df but with colours
+sudo apt --yes install gsimplecal # gtk popup calendar
 
 # icon pack
 sudo add-apt-repository ppa:snwh/pulp
