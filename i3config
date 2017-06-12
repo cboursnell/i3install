@@ -160,4 +160,4 @@ bindsym $mod+r mode "resize"
 
 exec_always --no-startup-id compton
 
-exec_always --no-startup-id .launch_polybar.sh
+exec_always --no-startup-id ~/.launch_polybar.sh
