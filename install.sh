@@ -42,6 +42,7 @@ cp i3config ~/.config/i3/config
 # config polybar
 mkdir -p ~/.config/polybar
 cp polybar.conf ~/.config/polybar/config
+cp launch_polybar.sh ~/.launch_polybar.sh
 
 # config lightdm-gtk-greeter
 sudo cp lightdm.conf /etc/lightdm/lightdm.conf
