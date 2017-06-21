@@ -91,6 +91,14 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias lr='ls -lhrt'
+alias lrt='ls -lhrt | tail'
+alias lss='ls -lhrS'
+alias duh='du -hc -d 1'
+alias duhs='du -hc -d 1 | sort -k1,1h'
+alias df='df -h'
+alias tre='tree -h | less'
+alias gcal='gcal -s 1'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
