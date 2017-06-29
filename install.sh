@@ -3,6 +3,7 @@
 # install things from apt
 #sudo apt --yes install i3
 source install_i3-gaps.sh
+sudo apt --yes install rofi
 sudo apt --yes install emacs24-nox
 sudo apt --yes install lightdm-gtk-greeter
 sudo apt --yes install lightdm-gtk-greeter-settings 
