@@ -16,7 +16,7 @@ cd ~/apps && tar xjf sublimetext3.tar.bz2
 rm sublimetext3.tar.bz2
 
 # add path to .profile
-echo "export PATH=\"$PATH:$HOME/apps/sublime_text_3\"" >> .profile
+echo "export PATH=\"$PATH:$HOME/apps/sublime_text_3\"" >> ~/.profile
 
 # install r + rstudio
 sudo apt install r-base
