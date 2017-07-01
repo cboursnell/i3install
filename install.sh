@@ -10,6 +10,7 @@ sudo apt --yes install lxappearance   # gtk themes
 sudo apt --yes install feh      # wallpapers
 sudo apt --yes install tree     # tree!
 sudo apt --yes install thunar   # graphical file manager
+gvfs-mime --set inode/directory Thunar-folder-handler.desktop
 sudo apt --yes install okular   # pdf viewer
 sudo apt --yes install scrot    # screen shots
 sudo apt --yes install compton  # compositor, allows transparency
@@ -59,3 +60,6 @@ cp ~/i3install/gtk2.0.conf ~/.gtkrc-2.0
 
 # config emacs
 cp ~/i3install/emacs.conf ~/.emacs
+
+# config rofi
+cp ~/i3install/rofi.conf ~/.config/rofi/config
