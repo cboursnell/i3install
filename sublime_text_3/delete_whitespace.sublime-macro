@@ -1,0 +1,24 @@
+[
+	{
+		"args":
+		{
+			"by": "words",
+			"extend": true,
+			"forward": false
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"by": "characters",
+			"extend": true,
+			"forward": false
+		},
+		"command": "move"
+	},
+	{
+		"args": null,
+		"command": "left_delete"
+	}
+]
