@@ -34,7 +34,7 @@ new_window pixel 2
 gaps inner 10
 gaps outer 0
 
-# for_window [class="soffice"] border normal
+for_window [class="XCalc"] floating enable
 
 #colors
 
