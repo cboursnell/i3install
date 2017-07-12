@@ -49,10 +49,10 @@ cp ~/i3install/polybar.conf ~/.config/polybar/config
 cp ~/i3install/launch_polybar.sh ~/.launch_polybar.sh
 
 # config lightdm-gtk-greeter
-sudo cp lightdm.conf /etc/lightdm/lightdm.conf
-sudo cp lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
+sudo cp ~/i3install/lightdm.conf /etc/lightdm/lightdm.conf
+sudo cp ~/i3install/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
 sudo mkdir -p /var/lib/lightdm/.cache/lightdm-gtk-greeter/
-sudo cp state /var/lib/lightdm/.cache/lightdm-gtk-greeter/state
+sudo cp ~/i3install/state /var/lib/lightdm/.cache/lightdm-gtk-greeter/state
 
 # config lxappearance
 cp ~/i3install/gtk3.0.conf ~/.config/gtk-3.0/settings.ini
